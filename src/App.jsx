@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Linkedin, MapPin, ChevronDown, Terminal, Shield, Network, Award, Server } from 'lucide-react';
+import { Mail, Network, MapPin, ChevronDown, Terminal, Shield, Award, Server } from 'lucide-react';
 import './index.css';
 
 function App() {
@@ -34,7 +34,7 @@ function HeroSection() {
             <Mail size={18} /> shreyasghevariya21@gmail.com
           </a>
           <a href="https://linkedin.com/in/shreyas-ghevariya" target="_blank" rel="noreferrer" className="flex items-center gap-2">
-            <Linkedin size={18} /> LinkedIn Profile
+            <Network size={18} /> LinkedIn Profile
           </a>
         </div>
         
