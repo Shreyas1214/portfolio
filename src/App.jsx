@@ -70,9 +70,13 @@ const LinkedinIcon = () => (
   </svg>
 );
 
+const TerminalPrompt = () => (
+  <span className="terminal-prompt">{`root@sg:~#`}</span>
+);
+
 function App() {
   useEffect(() => {
-    document.title = `${resumeData.name} | Portfolio`;
+    document.title = `[SYS] ${resumeData.name} | Security`;
   }, []);
 
   return (
@@ -81,23 +85,23 @@ function App() {
       <nav className="navbar">
         <div className="nav-content">
           <a href="#" className="logo">
-            SG.
+            [SYS_ADMIN]
           </a>
           <div className="nav-links">
             <a href="#about" className="nav-link">
-              About
+              // About
             </a>
             <a href="#skills" className="nav-link">
-              Skills
+              // Skills
             </a>
             <a href="#experience" className="nav-link">
-              Experience
+              // Experience
             </a>
             <a href="#certifications" className="nav-link">
-              Certifications
+              // Certs
             </a>
             <a href="#contact" className="nav-link">
-              Contact
+              // Contact
             </a>
           </div>
         </div>
@@ -107,22 +111,27 @@ function App() {
         {/* Hero Section */}
         <section id="about" className="hero">
           <h1>
-            Hi, I'm <span className="glow-text">{resumeData.name}</span>
+            <span className="terminal-prompt">{`>`}</span>
+            <span className="glitch glow-text" data-text={resumeData.name}>
+              {resumeData.name}
+            </span>
           </h1>
           <p>{resumeData.summary}</p>
           <div className="hero-actions">
             <a href="#contact" className="btn btn-primary">
-              Get In Touch
+              INIT_CONTACT
             </a>
             <a href="#experience" className="btn btn-glass">
-              View Experience
+              VIEW_LOGS
             </a>
           </div>
         </section>
 
         {/* Skills Section */}
         <section id="skills">
-          <h2>Technical Expertise</h2>
+          <h2>
+            <TerminalPrompt /> Technical_Expertise
+          </h2>
           <div className="skills-grid">
             {Object.entries(resumeData.skills).map(([category, items]) => (
               <div key={category} className="glass-card skill-category">
@@ -141,7 +150,9 @@ function App() {
 
         {/* Experience Section */}
         <section id="experience">
-          <h2>Professional Experience</h2>
+          <h2>
+            <TerminalPrompt /> Professional_Experience
+          </h2>
           <div className="timeline">
             {resumeData.experience.map((exp, idx) => (
               <div key={idx} className="glass-card timeline-item">
@@ -160,7 +171,9 @@ function App() {
 
         {/* Education & Certs */}
         <section id="certifications">
-          <h2>Education & Certifications</h2>
+          <h2>
+            <TerminalPrompt /> Education_&_Certifications
+          </h2>
 
           <div className="timeline" style={{ marginBottom: "3rem" }}>
             {resumeData.education.map((edu, idx) => (
@@ -190,9 +203,11 @@ function App() {
 
         {/* Contact Section */}
         <section id="contact" className="contact-section">
-          <h2>Let's Connect</h2>
+          <h2>
+            <TerminalPrompt /> Ping_Me
+          </h2>
           <p style={{ color: "var(--text-muted)" }}>
-            Currently looking for new opportunities in Cybersecurity.
+            Awaiting new connections. Port open on port 443.
           </p>
 
           <div className="contact-links">
@@ -227,8 +242,8 @@ function App() {
 
       <footer className="footer">
         <p>
-          &copy; {new Date().getFullYear()} {resumeData.name}. All rights
-          reserved.
+          {`[SYSTEM OFF]`} &copy; {new Date().getFullYear()} {resumeData.name}.
+          Extracted via Secure Protocol.
         </p>
       </footer>
     </div>
