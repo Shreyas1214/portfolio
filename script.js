@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const skillsGrid = document.getElementById("skillsGrid");
   for (const [category, items] of Object.entries(resumeData.skills)) {
     const categoryDiv = document.createElement("div");
-    categoryDiv.className = "neu-panel skill-category";
+    categoryDiv.className = "mac-card skill-category";
     
     const h3 = document.createElement("h3");
     h3.textContent = category;
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const expTimeline = document.getElementById("experienceTimeline");
   resumeData.experience.forEach(exp => {
     const item = document.createElement("div");
-    item.className = "neu-panel timeline-item";
+    item.className = "mac-card timeline-item";
     
     const h3 = document.createElement("h3");
     h3.textContent = exp.title;
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const eduTimeline = document.getElementById("educationTimeline");
   resumeData.education.forEach(edu => {
     const item = document.createElement("div");
-    item.className = "neu-panel timeline-item";
+    item.className = "mac-card timeline-item";
     item.style.padding = "1.5rem";
     
     const h3 = document.createElement("h3");
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const shieldIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cert-icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>`;
   resumeData.certifications.forEach(cert => {
     const card = document.createElement("div");
-    card.className = "neu-panel cert-card";
+    card.className = "mac-card cert-card";
     card.innerHTML = `${shieldIcon}<span>${cert}</span>`;
     certsGrid.appendChild(card);
   });
