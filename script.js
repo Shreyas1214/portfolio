@@ -89,18 +89,25 @@ document.addEventListener("DOMContentLoaded", () => {
     certsGrid.appendChild(card);
   });
 
-  // --- 3D Parallax & Mouse Listeners ---
+  // --- Apple Style 3D Parallax Images ---
+  const parallaxImages = document.querySelectorAll('.parallax-img');
+  
   const handleScroll = () => {
-    document.documentElement.style.setProperty('--scroll', window.scrollY);
-  };
-
-  const handleMouseMove = (e) => {
-    const x = ((e.clientX / window.innerWidth) - 0.5) * 15; // Range -7.5 to 7.5
-    const y = ((e.clientY / window.innerHeight) - 0.5) * 15;
-    document.documentElement.style.setProperty('--mouse-x', `${x}deg`);
-    document.documentElement.style.setProperty('--mouse-y', `${-y}deg`);
+    const scrollY = window.scrollY;
+    
+    // Animate the 3D images at different speeds
+    parallaxImages.forEach(img => {
+      const speed = parseFloat(img.getAttribute('data-speed'));
+      const yPos = scrollY * speed;
+      // Add a slight rotation for more 3D depth as it scrolls
+      const rot = scrollY * speed * 0.02; 
+      
+      img.style.transform = `translateY(${yPos}px) rotate(${rot}deg)`;
+    });
   };
 
   window.addEventListener('scroll', handleScroll, { passive: true });
-  window.addEventListener('mousemove', handleMouseMove, { passive: true });
+  
+  // Trigger once on load to ensure proper initial positioning
+  handleScroll();
 });
