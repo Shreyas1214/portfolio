@@ -101,6 +101,7 @@ function App() {
 
   return (
     <div className="app-container">
+      <div className="scanlines"></div>
       {/* Navigation */}
       <nav className="navbar">
         <div className="nav-content">

@@ -33,6 +33,33 @@ body {
   position: relative;
   overflow-x: hidden;
   perspective: 1000px;
+  animation: hologramFlicker 6s infinite;
+}
+
+@keyframes hologramFlicker {
+  0% { opacity: 1; }
+  5% { opacity: 0.9; }
+  10% { opacity: 1; filter: drop-shadow(0 0 5px var(--accent-secondary-glow)); }
+  15% { opacity: 1; filter: none; }
+  50% { opacity: 1; }
+  52% { opacity: 0.8; filter: drop-shadow(0 0 10px var(--accent-glow)); }
+  54% { opacity: 1; filter: none; }
+  100% { opacity: 1; }
+}
+
+/* CRT Scanlines Hologram Overlay */
+.scanlines {
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  width: 100vw; 
+  height: 100vh;
+  background: 
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+    linear-gradient(90deg, rgba(255, 0, 0, 0.05), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.05));
+  background-size: 100% 3px, 3px 100%;
+  z-index: 9999;
+  pointer-events: none;
 }
 
 /* 3D Dynamic Cyber Grid Background */
@@ -77,6 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: clamp(2.5rem, 5vw, 4rem);
   letter-spacing: -0.02em;
+  text-shadow: 2px 0px 1px rgba(0, 255, 255, 0.4), -2px 0px 1px rgba(255, 0, 0, 0.4);
 }
 
 h2 {
@@ -84,6 +112,7 @@ h2 {
   margin-bottom: 2rem;
   text-align: left;
   color: var(--text-main);
+  text-shadow: 1.5px 0px 1px rgba(0, 255, 255, 0.4), -1.5px 0px 1px rgba(255, 0, 0, 0.4);
 }
 
 .terminal-prompt {
