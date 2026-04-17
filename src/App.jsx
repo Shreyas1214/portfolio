@@ -77,6 +77,26 @@ const TerminalPrompt = () => (
 function App() {
   useEffect(() => {
     document.title = `[SYS] ${resumeData.name} | Security`;
+
+    // 3D Visuals & Parallax Event Listeners
+    const handleScroll = () => {
+      document.documentElement.style.setProperty('--scroll', window.scrollY);
+    };
+
+    const handleMouseMove = (e) => {
+      const x = ((e.clientX / window.innerWidth) - 0.5) * 15; // Range -7.5 to 7.5
+      const y = ((e.clientY / window.innerHeight) - 0.5) * 15;
+      document.documentElement.style.setProperty('--mouse-x', `${x}deg`);
+      document.documentElement.style.setProperty('--mouse-y', `${-y}deg`);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('mousemove', handleMouseMove, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
   }, []);
 
   return (
