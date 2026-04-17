@@ -1,4 +1,4 @@
-export const resumeData = {
+const resumeData = {
   name: "Shreyas Ghevariya",
   roles: ["Cybersecurity Specialist", "SOC Analyst", "Cyber Security Analyst"],
   contact: {
