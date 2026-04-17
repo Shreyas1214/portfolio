@@ -1,16 +1,56 @@
-# React + Vite
+# 🛡️ Cybersecurity Portfolio - Shreyas Ghevariya
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, interactive personal portfolio website designed to showcase my experience, technical skills, and certifications in the Cybersecurity domain.
 
-Currently, two official plugins are available:
+![Portfolio Preview](./public/vite.svg) *Replace this with a screenshot of the portfolio!*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌟 Overview
+Built with **React**, **Vite**, and **Vanilla CSS**, featuring a modern **dark-mode glassmorphism** aesthetic. The layout is optimized to highlight key cybersecurity disciplines including SIEM, Cloud Security, Penetration Testing, and Incident Response.
 
-## React Compiler
+### 🌐 Live Deployment
+The portfolio is currently published via GitHub Pages:
+**🔗 [View Live Portfolio](https://Shreyas1214.github.io/portfolio)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack & Features
+- **Frontend Framework**: React 19 + Vite (for ultra-fast HMR and building)
+- **Styling**: Vanilla CSS with modern Glassmorphism logic, mesh gradients, and semantic properties.
+- **Typography**: Google Fonts (Outfit & Inter)
+- **Static Deployment**: Easily deployable using the `gh-pages` npm package module.
+- **Icons**: Lean, inline SVG-based iconography for fast loading.
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+If you wish to run this portfolio locally or customize it to your own liking, follow these steps:
+
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shreyas1214/portfolio.git
+   cd portfolio
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development
+To launch the Vite development server locally, run:
+```bash
+npm run dev
+```
+Open your browser and navigate to `http://localhost:5173`.
+
+## 📦 Deployment (GitHub Pages)
+This repository is configured to automatically deploy to the `gh-pages` branch. 
+
+To deploy a new update, simply run:
+```bash
+npm run deploy
+```
+This script will automatically trigger `vite build` (via the `predeploy` command) and push the `./dist` folder securely to your `gh-pages` origin branch.
+
+---
+*Created and maintained by [Shreyas Ghevariya](https://www.linkedin.com/in/shreyas-ghevariya/)*
