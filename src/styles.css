@@ -702,6 +702,15 @@ section {
   opacity: 1;
 }
 
+.hof-featured {
+  border: 1px solid rgba(0, 102, 204, 0.12);
+  background: linear-gradient(180deg, rgba(0, 102, 204, 0.03) 0%, white 100%);
+}
+
+.hof-featured::after {
+  background: linear-gradient(90deg, #ff9500, #ff3b30, #0066cc);
+}
+
 .hof-badge {
   font-size: 2.5rem;
   margin-bottom: 1rem;
