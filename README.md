@@ -1,8 +1,8 @@
 # 🛡️ Shreyas Ghevariya — Cybersecurity Portfolio
 
-> Apple-inspired, minimalist cybersecurity portfolio showcasing SOC operations, penetration testing, and enterprise security expertise.
+> A modern, sleek, and minimalist cybersecurity portfolio showcasing SOC operations, penetration testing, and enterprise security expertise.
 
-![Portfolio](https://img.shields.io/badge/Design-Apple_Inspired-0066cc?style=for-the-badge)
+![Portfolio](https://img.shields.io/badge/Design-Modern_&_Minimalist-0066cc?style=for-the-badge)
 ![Tech](https://img.shields.io/badge/Stack-Vite_|_TypeScript_|_CSS-61dafb?style=for-the-badge)
 ![Deploy](https://img.shields.io/badge/Deploy-GitHub_Pages-black?style=for-the-badge&logo=github)
 
@@ -13,7 +13,7 @@
 
 ## ✨ Features
 
-- **Apple-style Design** — Clean typography, glassmorphism cards, and gradient accents
+- **Modern UI/UX** — Clean typography, glassmorphism cards, and sleek gradient accents
 - **Parallax SVG Elements** — Floating security-themed icons that respond to scroll
 - **Scroll Reveal Animations** — Content appears elegantly as you scroll
 - **Bug Bounty Showcase** — 50+ websites secured, 7x Hall of Fame, 3 security badges
@@ -44,7 +44,7 @@ Push to `main` → GitHub Actions automatically builds and deploys to GitHub Pag
 |---|---|
 | Vite | Build tool & dev server |
 | TypeScript | Type-safe JavaScript |
-| Vanilla CSS | Custom Apple-inspired design system |
+| Vanilla CSS | Custom modern design system |
 | GitHub Actions | CI/CD pipeline |
 | GitHub Pages | Static hosting |
 
