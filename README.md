@@ -1,45 +1,53 @@
-# 🛡️ 3D Cybersecurity Portfolio - Shreyas Ghevariya
+# 🛡️ Shreyas Ghevariya — Cybersecurity Portfolio
 
-> A highly-interactive, Cyberpunk-themed 3D portfolio designed to showcase high-level penetration testing, SOC operations, and enterprise cybersecurity experience. 
+> A modern, sleek, and minimalist cybersecurity portfolio showcasing SOC operations, penetration testing, and enterprise security expertise.
 
-![Portfolio Cyberpunk Theme](https://img.shields.io/badge/Theme-Cyberpunk_Hologram-00ff41?style=for-the-badge)
-![Tech Stack](https://img.shields.io/badge/Architecture-100%25_HTML5_|_Vanilla_JS-61dafb?style=for-the-badge&logo=html5)
-![Deployment](https://img.shields.io/badge/Deployed-GitHub_Pages-black?style=for-the-badge&logo=github)
+![Portfolio](https://img.shields.io/badge/Design-Modern_&_Minimalist-0066cc?style=for-the-badge)
+![Tech](https://img.shields.io/badge/Stack-Vite_|_TypeScript_|_CSS-61dafb?style=for-the-badge)
+![Deploy](https://img.shields.io/badge/Deploy-GitHub_Pages-black?style=for-the-badge&logo=github)
 
-### 🌐 Live Deployment
-**🔗 [INITIALIZE CONNECTION -> View Live Portfolio](https://Shreyas1214.github.io/portfolio)**
+### 🌐 Live
+**🔗 [View Portfolio →](https://Shreyas1214.github.io/portfolio)**
+
+---
+
+## ✨ Features
+
+- **Modern UI/UX** — Clean typography, glassmorphism cards, and sleek gradient accents
+- **Parallax SVG Elements** — Floating security-themed icons that respond to scroll
+- **Scroll Reveal Animations** — Content appears elegantly as you scroll
+- **Bug Bounty Showcase** — 50+ websites secured, 7x Hall of Fame, 3 security badges
+- **Interactive Skill Tags** — Hover effects on all 73+ technical skills
+- **Experience Timeline** — Visual timeline with achievement bullets
+- **11 Certifications** — CEH, Security+, CPTE, CPEH, CC (ISC2), and more
+- **Fully Responsive** — Mobile-first design that looks great on all devices
+
+## 🚀 Quick Start
+
+```bash
+# Clone
+git clone https://github.com/Shreyas1214/portfolio.git
+cd portfolio
+
+# Install & Run
+npm install
+npm run dev
+```
+
+## 📦 Deploy
+
+Push to `main` → GitHub Actions automatically builds and deploys to GitHub Pages.
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Vite | Build tool & dev server |
+| TypeScript | Type-safe JavaScript |
+| Vanilla CSS | Custom modern design system |
+| GitHub Actions | CI/CD pipeline |
+| GitHub Pages | Static hosting |
 
 ---
 
-## 💻 Elite Cyber Security Aesthetic
-
-The UI utilizes an amazing **3D Hologram Hacker** interface. Key visual technology includes:
-
-- **Hologram Glitches & Overlays**: Full viewport CRT scanlines combined with synchronized multi-opacity flicker animations.
-- **3D Interactive Cyberspace**: Utilizing complex pure regular CSS perspective matrix grids that natively respond to `mouseX` and `mouseY` inputs.
-- **Scroll Parallax Bindings**: As the user scrolls, Javascript bindings physically shift the 3D grid backwards mapping to your scroll inputs.
-- **Glitch Fonts**: True chromatic aberration with Text Shadows simulating anaglyph red/cyan displacement, along with pseudo-root terminal indicators (`>_`).
-
-## 🛠️ Architecture Core Layer
-
-The system runs on the ultimate ultra-lightweight architecture: **Pure Raw HTML!**
-- **Zero Dependencies**: There is NO `package.json`, NO `node_modules`, and NO build times.
-- **Instant Deployment**: Because this is purely `index.html`, any changes you make act instantly.
-
-## 🚀 Environment Initialization (Local Deployment)
-
-1. Clone the repository locally:
-   ```bash
-   git clone https://github.com/Shreyas1214/portfolio.git
-   cd portfolio
-   ```
-2. Simply double-click `index.html` to run the website offline locally!
-
-## 📦 Master Deployment (Origin -> GitHub Pages)
-
-Changing the website is as easy as modifying `data.js` or `index.html` and committing the code directly to `main`. 
-
-> **Important Setup:** Ensure that your GitHub Repository Settings > **Pages** is configured to build from the **`main`** branch (Root Directory) since the `gh-pages` branch is no longer necessary.
-
----
-*Developed & Maintained securely by [Shreyas Ghevariya](https://www.linkedin.com/in/shreyas-ghevariya/)*
+*Built & maintained by [Shreyas Ghevariya](https://www.linkedin.com/in/shreyas-ghevariya/)*
