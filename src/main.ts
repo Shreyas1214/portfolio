@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
   handleScroll();
 
   // Add reveal class to bug bounty cards
-  document.querySelectorAll('.bb-hero-card, .bb-badge-item, .achievement-card').forEach(el => {
+  document.querySelectorAll('.bb-hero-card, .bb-badge-item, .achievement-card, .hof-card').forEach(el => {
     el.classList.add('reveal');
   });
 
